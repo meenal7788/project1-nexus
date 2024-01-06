@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,200;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+  
+}
+.main-block{
+    color: white;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 23%; /* Adjust the width as needed */
+    width: 100%;
+    height: auto;
+    background: rgba(12, 7, 7, 0.3); /* Adjust opacity for the glass effect */
+    backdrop-filter: blur(10px);
+    
+}
+.title{
+    padding-left: 20px;
+    text-align: left;
+}
+.title h3{
+    font-size: 1.5rem;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.title p{
+    font-size: 0.8rem;
+}
+form{
+    
+   display: flex;
+   flex-direction: column;
+   
+   padding-left: 10px;
+}
+input{
+    width: 96%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: aliceblue;
+    padding-left: 10px;
+}
+::placeholder{
+    font-size: 0.9rem;
+    color: aliceblue;
+}
+.check{
+    margin: -10px 0 0 0;
+    padding-left: 5px;
+}
+
+.check input{
+    background-color: transparent;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+.check label{
+    font-size: 0.7rem;
+}
+.button{
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.button a{
+    font-size: 0.7rem;
+    color: aliceblue;
+    padding-top: 5px;
+}
+.login-button{
+    width: 95%;
+    height: 40px;
+    font-size: 1rem;
+    background-image: linear-gradient(to right,rgb(68, 68, 236), #6ea0f1,rgb(144, 203, 201),#7721a9,rgb(90, 27, 101));
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    cursor: pointer;
+}
+.login-button:hover{
+    box-shadow: 0px 0px 20px rgb(81, 117, 149);
+}
+.or{
+   
+    margin-top: 20px;
+    text-align: center;
+}
+.or p{
+    opacity: 0.7;
+    font-weight: 5;
+}
+.icons i{
+    
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    font-size: 30px;
+    margin-right:3px ;
+    color: aliceblue;
+}
+.last{
+    
+    display: flex;
+    justify-content: center;
+}
+.last p{
+    font-size: 0.7rem;
+    margin-right: 5px;
+    letter-spacing: 0.9px;
+    justify-content: center;
+}
+.last a{
+    font-size: 0.7rem;
+    color: white;
+    justify-content: center;
+}
+.last a:hover{
+    text-decoration: underline;
+}
+.terms{
+    
+    font-size: 0.7rem;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.bottom{
+    margin-top: 30px;
+    
+}
+@media screen and (max-width:768) {
+    .main-block {
+        max-width: 90%; 
+      }
+}
+@media screen and (max-width: 600px) {
+    .last {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
+      align-items: center; /* Centers items vertically */
+    }
+  
+    .last p,
+    .last a {
+      margin-right: 0;
+    }
+  
+    .last p:last-child,
+    .last a:last-child {
+      margin-bottom: 0; /* Removes extra margin for the last item */
+    }
+  }
+  
+  /* Terms section adjustments */
+  .terms {
+    font-size: 0.7rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 600px) {
+    .terms {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .terms p {
+      margin-bottom: 3px; /* Adds space between items */
+    }
+  
+    .terms p:last-child {
+      margin-bottom: 0; /* Removes extra margin for the last item */
+    }
+  }
